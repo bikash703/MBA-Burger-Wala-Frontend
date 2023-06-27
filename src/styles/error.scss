@@ -1,0 +1,66 @@
+
+@import 'color';
+
+.error{
+    background-color: $pink;
+    height: 80vh;
+    width: 100%;
+    >main{
+        max-width: 800px;
+        margin: auto;
+        padding: 2rem;
+        background-color: #fff;
+        >article{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            >div{
+                display: flex;
+                >svg{
+                    font-size: 2rem;
+                }
+                >P{
+                    letter-spacing: 2px;
+                    font-size: 2rem;
+                margin-left: 1rem;
+                }
+            }
+            >article{
+                margin-top: 6rem;
+                display: grid;
+                place-items: center;
+                >p{
+                    letter-spacing: 2px;
+                    margin-bottom: 2rem;
+                }
+                >a{
+                    background-color: $red;
+                    color: #fff;
+                    padding: 0.7rem 0.5rem;
+                    border-radius: 5px;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .error{
+        height: 60vh;
+        >main{
+            padding: 0rem;
+            >article>div{
+                >p{
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+                >svg{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

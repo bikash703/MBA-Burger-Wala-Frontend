@@ -1,0 +1,32 @@
+@import 'color';
+
+.login{
+    height: 100vh;
+    width: 100%;
+    background: url('../assests/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >button{
+        background-color: #fff;
+        color:$lightdark ;
+        padding: 1rem 2rem;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        letter-spacing: 2px;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        cursor: pointer;
+        box-shadow: 2px 2px 10px solid rgba(0, 0, 0, 0.343);
+        &:hover{
+            color: $red;
+        }
+        >svg{
+            margin-left: 10px;
+        }
+    }
+}

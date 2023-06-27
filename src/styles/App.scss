@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Tenor+Sans&family=Ubuntu:wght@300;400&display=swap');
+
+@import './navbar.scss';
+@import './home.scss';
+@import './founder.scss';
+@import './menu.scss';
+@import './footer.scss';
+@import './contact.scss';
+@import './cart.scss';
+@import './shipping.scss';
+@import './confirmOrder.scss';
+@import './paymentSuccess.scss';
+@import './login.scss';
+@import './profile.scss';
+@import './orders.scss';
+@import './orderDetails.scss';
+@import './dashboard.scss';
+@import './about.scss';
+@import './error.scss';
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+@import 'color';
+
+.loader{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    >svg{
+        opacity: 0.5;
+        font-size: 15rem;
+        color: $red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
+

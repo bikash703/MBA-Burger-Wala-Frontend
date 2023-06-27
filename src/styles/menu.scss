@@ -1,0 +1,79 @@
+@import 'color';
+
+#menu{
+    min-height:100vh ;
+    width: 100%;
+    background-color: white;
+    padding: 4rem;
+    >h1{
+        font-size: 2rem;
+        padding: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    >div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+.menucard{
+    background-color: #fff;
+    width: 30%;
+    box-shadow:  0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    >div{
+        border-radius: 20px 20px 0 0;
+        background-color: $red;
+        padding: 2rem;
+        height: 3rem;
+        color: #fff;
+        display: flex;
+        align-items: center;
+    }
+    >main{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        >img{
+            height: 12rem;
+            width: 100%;
+            object-fit: contain;
+        }
+        >h5{
+            font-size: 1.8rem;
+        }
+        >p{
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 1rem 0;
+            font-size: 0.87rem;
+        }
+        >button{
+            background-color: $red;
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            &:hover{
+                background-color: $reddark;
+            }
+        }
+    }
+}
+@media screen and (max-width:600px) {
+   #menu{
+overflow: scroll;
+       >div{
+        flex-direction: column;
+   }
+   }
+   .menucard{
+    width: 100%;
+    margin: 1rem 0;
+   }
+}

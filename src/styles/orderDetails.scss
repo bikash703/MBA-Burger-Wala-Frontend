@@ -1,0 +1,73 @@
+@import 'color';
+
+
+.orderDetails{
+    width: 100vw;
+    background-color: $pink;
+
+    >main{
+        max-width: 900px;
+        background-color: #fff;
+        margin: auto;
+        padding: 2rem;
+        overflow-x: auto;
+        >h1{
+            text-transform: uppercase;
+            text-align: center;
+            margin: 3rem;
+            font-size: 3rem;
+            font-weight: 200;
+        }
+        >div{
+            text-align: center;
+            margin: 2rem 0;
+            >h1{
+                text-transform: uppercase;
+                letter-spacing: 5px;
+            }
+            >p{
+                letter-spacing: 2px;
+                // font-weight: 200;
+                white-space: nowrap;
+                margin: 1.5rem;
+                >b{
+                    margin-right: 5px;
+                }
+            }
+        }
+        >article{
+            >h1{
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                margin: 2rem 0;
+                letter-spacing: 5px;
+            }
+            >div{
+                background-color: rgb(246,246,246);
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 5px;
+                >h4{
+                font-weight: 200;
+                letter-spacing: 2px;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .orderDetails>main>div{
+        >h1{
+            font-size: 1.4rem;
+        }
+        >p{
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            margin: 2rem 0;
+        }
+    }
+}
